@@ -15,11 +15,11 @@ footer {
 footer ul {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
 	padding: 0px;
-    	list-style: none;
+    	list-style-type: none;
     	font-weight: bold;
 }
 
-footer ul li {
+footer li {
 	display: inline;
 	margin-right: 20px;
 }
