@@ -1,12 +1,12 @@
 body { 
-	padding-top: 40px; padding-bottom: 60px; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; font-size: 16px;
+	padding-top: 20px; padding-bottom: 40px; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; font-size: 16px;
 }
 
 .header {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
 	padding-bottom: 20px;
 	border-bottom: 1px solid #d5d5d5;
-    	font-size: .8em;
+    	font-size: 1.2em;
 }
 
 .footer {
