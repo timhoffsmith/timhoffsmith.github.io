@@ -6,7 +6,7 @@ body {
 }
 
 header {
-	border-bot: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
     	font-size: .8em;
 }
 
@@ -15,43 +15,25 @@ footer {
     	font-size: .8em;
 }
 
+footer ul li {
+	font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	padding: 0px;
+    	list-style: none;
+    	font-weight: bold;
+	display: inline;
+	margin-right: 20px;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Helvetica', 'Arial', 'Sans-Serif'; font-weight: 700;
 }
 
-/* Masthead */
-.header, .footer, .header h3 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; font-weight: normal; }
-
 /* Navigation */
 h3.text-muted a {text-decoration: none; color: #999999; }
 h3.text-muted a:hover { text-decoration: none; color: #0088cc; }
-		
-/* Custom container */
-.container > hr { margin: 30px 0; }
-.container > hr.footer {margin-bottom: 15px; }
 
 /* CV */
 .cv {line-height: 23px; width: 90%; margin: 0 auto;}
 .cv li { line-height: 23px; }
 .cv h2 { font-size: 26.5px; }
 .cv h1 { font-size: 32.5px; }
-
-/* About */
-.about ul.list-unstyled li { line-height: 30px; text-indent: -30px; margin-left: 30px;}
-
-/* Code */
-pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
-
-.step { border-radius: 50%; 
-	-moz-border-radius: 50%; 
-	-webkit-border-radius: 50%; 
-	width: 35px; 
-	height: 35px; 
-	background: #4679BD; 
-	color: #FFF; 
-	float: left;
-	text-align: center;
-	font-size: 24px;
-	padding-top: 5.5px;
-	margin: 5px 15px 0px 0px;
-	font-family: 'Montserrat', Helvetica, sans-serif; }
