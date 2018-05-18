@@ -16,11 +16,11 @@ footer {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: 'Merriweather', Georgia, Times; font-weight: 700;
+	font-family: 'Helvetica', 'Arial', 'Sans-Serif'; font-weight: 700;
 }
 
 /* Masthead */
-.header, .footer, .header h3 { font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }
+.header, .footer, .header h3 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; font-weight: normal; }
 
 /* Navigation */
 h3.text-muted a {text-decoration: none; color: #999999; }
@@ -30,16 +30,11 @@ h3.text-muted a:hover { text-decoration: none; color: #0088cc; }
 .container > hr { margin: 30px 0; }
 .container > hr.footer {margin-bottom: 15px; }
 
-/* E-Mail */
-.obfuscate { unicode-bidi: bidi-override; direction: rtl; }
-
 /* CV */
 .cv {line-height: 23px; width: 90%; margin: 0 auto;}
 .cv li { line-height: 23px; }
 .cv h2 { font-size: 26.5px; }
 .cv h1 { font-size: 32.5px; }
-
-.about, .cv, { margin-bottom: 30px; }
 
 /* About */
 .about ul.list-unstyled li { line-height: 30px; text-indent: -30px; margin-left: 30px;}
