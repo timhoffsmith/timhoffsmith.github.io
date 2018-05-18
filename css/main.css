@@ -9,6 +9,11 @@ body {
     	font-size: 1.2em;
 }
 
+.blurb {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
 .footer {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
 	padding-top: 20px;
