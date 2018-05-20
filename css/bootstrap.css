@@ -3920,8 +3920,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #ffffff;
-  background-color: #428bca;
+  color: #000000;
+  background-color: #d8d8d8;
 }
 
 .nav-stacked > li {
