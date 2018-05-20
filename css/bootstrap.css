@@ -3805,6 +3805,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav > li > a {
+  color: #A8A8A8;
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -3812,7 +3813,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  color: #bdbcbc;
+  color: #8c8c8d;
   text-decoration: none;
   background-color: #eeeeee;
 }
