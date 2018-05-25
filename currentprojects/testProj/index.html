@@ -15,18 +15,27 @@ button {
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script>
 
+/*
 var n = 9, // number of layers
     m = 134, // number of samples per layer
     k = 20; // number of bumps per layer
+*/
 
-d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
-    console.log(data);
-});
+d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){});
 
+/*
 var stack = d3.stack().keys(d3.range(n)).offset(d3.stackOffsetWiggle),
     layers0 = stack(d3.transpose(d3.range(n).map(function() { return bumps(m, k); }))),
     layers1 = stack(d3.transpose(d3.range(n).map(function() { return bumps(m, k); }))),
     layers = layers0.concat(layers1);
+*/
+
+var stack = d3.stack()
+    .keys(["64N-90N","44N-64N","24N-44N","EQU-24N","24S-EQU","44S-24S","64S-44S","90S-64S"])
+    .order(d3.stackOrderNone)
+    .offset(d3.stackOffsetWiggle);
+
+var layers0 = stack(data);
 
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
@@ -64,13 +73,15 @@ function stackMin(layer) {
 function transition() {
   var t;
   d3.selectAll("path")
-    .data((t = layers1, layers1 = layers0, layers0 = t))
+    //.data((t = layers1, layers1 = layers0, layers0 = t))
+    .data((t = layers0, layers0 = layers0, layers0 = t))
     .transition()
       .duration(750)
       .attr("d", area);
 }
 
 // Inspired by Lee Byron’s test data generator.
+/*
 function bumps(n, m) {
   var a = [], i;
   for (i = 0; i < n; ++i) a[i] = 0;
@@ -87,5 +98,6 @@ function bump(a, n) {
     a[i] += x * Math.exp(-w * w);
   }
 }
+*/
 
 </script>
