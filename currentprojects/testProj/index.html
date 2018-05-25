@@ -72,10 +72,10 @@ function stackMin(layer) {
   return d3.min(layer, function(d) { return d[0]; });
 }
 
+//.data((t = layers1, layers1 = layers0, layers0 = t))
 function transition() {
   var t;
   d3.selectAll("path")
-    //.data((t = layers1, layers1 = layers0, layers0 = t))
     .data((t = layers0, layers0 = layers0, layers0 = t))
     .transition()
       .duration(750)
