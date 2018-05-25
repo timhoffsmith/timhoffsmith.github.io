@@ -21,14 +21,14 @@ var n = 9, // number of layers
     k = 20; // number of bumps per layer
 */
 
-var dataset
 var headers = ["64N-90N","44N-64N","24N-44N","EQU-24N","24S-EQU","44S-24S","64S-44S","90S-64S"]
+var dataset
 d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
-    dataset = d3.layout.stack()headers.map(function(latitude){
+    dataset = d3.layout.stack()(headers.map(function(latitude){
       return data.map(function(d) {
         return {x: d.year, y: +d[latitude]};
       });
-    });
+    }));
 });
 
 /*
