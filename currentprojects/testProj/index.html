@@ -21,7 +21,9 @@ var n = 9, // number of layers
     k = 20; // number of bumps per layer
 */
 
-d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){});
+d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
+    dataset = data
+});
 
 /*
 var stack = d3.stack().keys(d3.range(n)).offset(d3.stackOffsetWiggle),
@@ -35,7 +37,7 @@ var stack = d3.stack()
     .order(d3.stackOrderNone)
     .offset(d3.stackOffsetWiggle);
 
-var layers0 = stack(data);
+var layers0 = stack(dataset);
 
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
