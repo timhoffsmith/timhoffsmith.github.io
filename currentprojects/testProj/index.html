@@ -40,11 +40,13 @@ d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
       "64S-44S": +d["64S-44S"],
       "90S-64S": +d["90S-64S"]
     };
+}, function(data) {
+  console.log(data[0]);
+  dataset = data;
 });
-dataset = data;
 
 //check that dataset got saved
-console.log(dataset);
+console.log(dataset[0]);
 
 /*
 var stack = d3.stack().keys(d3.range(n)).offset(d3.stackOffsetWiggle),
