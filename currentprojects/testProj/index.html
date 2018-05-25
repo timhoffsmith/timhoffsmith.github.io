@@ -24,10 +24,6 @@ var n = 9, // number of layers
 var dataset
 d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
     return {
-      city : d.city,
-      state : d.state,
-      population : +d.population,
-      land_area : +d["land area"]
       "Year": +d.["Year"],
       "Glob": +d.["Glob"],
       "NHem": +d.["NHem"],
