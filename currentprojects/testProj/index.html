@@ -21,8 +21,11 @@ var n = 9, // number of layers
     k = 20; // number of bumps per layer
 */
 
+var dataset
 var headers = ["64N-90N","44N-64N","24N-44N","EQU-24N","24S-EQU","44S-24S","64S-44S","90S-64S"]
-d3.json("ExcelFormattedGISTEMPData2JS.js", function(data){});
+d3.json("ExcelFormattedGISTEMPData2JS.js", function(data){
+    dataset = data;
+});
 
 /*
 var stack = d3.stack().keys(d3.range(n)).offset(d3.stackOffsetWiggle),
