@@ -22,7 +22,6 @@ var n = 9, // number of layers
 */
 
 var dataset
-var headers = ["64N-90N","44N-64N","24N-44N","EQU-24N","24S-EQU","44S-24S","64S-44S","90S-64S"]
 d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
     dataset = data;
 });
@@ -35,12 +34,12 @@ var stack = d3.stack().keys(d3.range(n)).offset(d3.stackOffsetWiggle),
 */
 
 var stack = d3.stack()
-    .keys(headers)
+    .keys(["64N-90N","44N-64N","24N-44N","EQU-24N","24S-EQU","44S-24S","64S-44S","90S-64S"])
     .order(d3.stackOrderNone)
-    .offset(d3.stackOffsetWiggle);
+    .offset(d3.stackOffsetWiggle),
+    layers0 = stack(dataset),
+    layers = layers0;
 
-var layers0 = stack(dataset);
-var layers = layers0;
 
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
