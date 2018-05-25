@@ -22,7 +22,7 @@ var n = 9, // number of layers
 */
 
 d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
-    dataset = data
+    var dataset = data
 });
 
 /*
@@ -38,6 +38,7 @@ var stack = d3.stack()
     .offset(d3.stackOffsetWiggle);
 
 var layers0 = stack(dataset);
+var layers = layers0;
 
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
