@@ -22,13 +22,7 @@ var n = 9, // number of layers
 */
 
 var headers = ["64N-90N","44N-64N","24N-44N","EQU-24N","24S-EQU","44S-24S","64S-44S","90S-64S"]
-d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
-    var dataset = d3.layout.stack()(headers.map(function(latitude){
-      return data.map(function(d) {
-        return {x: d.year, y: +d[latitude]};
-      });
-    }));
-});
+d3.js("ExcelFormattedGISTEMPData2JS.csv", function(data){});
 
 /*
 var stack = d3.stack().keys(d3.range(n)).offset(d3.stackOffsetWiggle),
