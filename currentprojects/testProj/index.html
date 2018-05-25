@@ -23,8 +23,32 @@ var n = 9, // number of layers
 
 var dataset
 d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
-    dataset = data;
+    return {
+      city : d.city,
+      state : d.state,
+      population : +d.population,
+      land_area : +d["land area"]
+      "Year": +d.["Year"],
+      "Glob": +d.["Glob"],
+      "NHem": +d.["NHem"],
+      "SHem": +d.["SHem"],
+      "24N-90N": +d.["24N-90N"],
+      "24S-24N": +d.["24S-24N"],
+      "90S-24S": +d.["90S-24S"],
+      "64N-90N": +d.["64N-90N"],
+      "44N-64N": +d.["44N-64N"],
+      "24N-44N": +d.["24N-44N"],
+      "EQU-24N": +d.["EQU-24N"],
+      "24S-EQU": +d.["24S-EQU"],
+      "44S-24S": +d.["44S-24S"],
+      "64S-44S": +d.["64S-44S"],
+      "90S-64S": +d.["90S-64S"]
+    };
 });
+dataset = data;
+
+//check that dataset got saved
+console.log(dataset);
 
 /*
 var stack = d3.stack().keys(d3.range(n)).offset(d3.stackOffsetWiggle),
@@ -33,11 +57,12 @@ var stack = d3.stack().keys(d3.range(n)).offset(d3.stackOffsetWiggle),
     layers = layers0.concat(layers1);
 */
 
+var headers = ["64N-90N","44N-64N","24N-44N","EQU-24N","24S-EQU","44S-24S","64S-44S","90S-64S"]
 var stack = d3.stack()
-    .keys(["64N-90N","44N-64N","24N-44N","EQU-24N","24S-EQU","44S-24S","64S-44S","90S-64S"])
+    .keys(headers)
     .order(d3.stackOrderNone)
     .offset(d3.stackOffsetWiggle),
-    layers0 = stack(dataset),
+    layers0 = stack(d3.transpose(dataset.Year[7:14].map(dataset.)),
     layers = layers0;
 
 
