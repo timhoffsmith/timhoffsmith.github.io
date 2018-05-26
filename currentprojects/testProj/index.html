@@ -57,8 +57,8 @@ d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
   var stack = d3.stack()
       .keys(headers)
       .order(d3.stackOrderNone)
-      .offset(d3.stackOffsetWiggle),
-      layers0 = stack(data),
+      .offset(d3.stackOffsetWiggle);
+/*      layers0 = stack(data),
       layers = layers0;
 
 
@@ -124,7 +124,7 @@ d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
     }
   }
   */
-
+*/
 });
 
 </script>
