@@ -21,29 +21,27 @@ var n = 9, // number of layers
     k = 20; // number of bumps per layer
 */
 
-d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
 /*
-  data.forEach(function(d) {
-    d.population = +d.population;
-    d["land area"] = +d["land area"];
-  });
-
-  "Year": +d["Year"],
-  "Glob": +d["Glob"],
-  "NHem": +d["NHem"],
-  "SHem": +d["SHem"],
-  "24N-90N": +d["24N-90N"],
-  "24S-24N": +d["24S-24N"],
-  "90S-24S": +d["90S-24S"],
-  "64N-90N": +d["64N-90N"],
-  "44N-64N": +d["44N-64N"],
-  "24N-44N": +d["24N-44N"],
-  "EQU-24N": +d["EQU-24N"],
-  "24S-EQU": +d["24S-EQU"],
-  "44S-24S": +d["44S-24S"],
-  "64S-44S": +d["64S-44S"],
-  "90S-64S": +d["90S-64S"]
-*/
+d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(d){
+    return {
+      "Year": +d["Year"],
+      "Glob": +d["Glob"],
+      "NHem": +d["NHem"],
+      "SHem": +d["SHem"],
+      "24N-90N": +d["24N-90N"],
+      "24S-24N": +d["24S-24N"],
+      "90S-24S": +d["90S-24S"],
+      "64N-90N": +d["64N-90N"],
+      "44N-64N": +d["44N-64N"],
+      "24N-44N": +d["24N-44N"],
+      "EQU-24N": +d["EQU-24N"],
+      "24S-EQU": +d["24S-EQU"],
+      "44S-24S": +d["44S-24S"],
+      "64S-44S": +d["64S-44S"],
+      "90S-64S": +d["90S-64S"]
+    };
+}, function(data) {
+/*
 
   //check that dataset is good
   console.log(data);
@@ -55,7 +53,14 @@ d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
       layers = layers0.concat(layers1);
   */
 
-  var headers = ["64N-90N","44N-64N","24N-44N","EQU-24N","24S-EQU","44S-24S","64S-44S","90S-64S"]
+  var data = [
+    {month: new Date(2015, 0, 1), apples: 3840, bananas: 1920, cherries: 960, dates: 400},
+    {month: new Date(2015, 1, 1), apples: 1600, bananas: 1440, cherries: 960, dates: 400},
+    {month: new Date(2015, 2, 1), apples:  640, bananas:  960, cherries: 640, dates: 400},
+    {month: new Date(2015, 3, 1), apples:  320, bananas:  480, cherries: 640, dates: 400}
+  ];
+  //var headers = ["64N-90N","44N-64N","24N-44N","EQU-24N","24S-EQU","44S-24S","64S-44S","90S-64S"];
+  var headers = ["apples", "bananas", "dates"];
   var stack = d3.stack()
       .keys(headers)
       .order(d3.stackOrderNone)
@@ -127,6 +132,6 @@ d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data){
   }
   */
 
-});
+//});
 
 </script>
