@@ -21,7 +21,7 @@ var n = 9, // number of layers
     k = 20; // number of bumps per layer
 */
 
-d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
+var plot = d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
     data.forEach(function(d) {
       d["Year"] = +d["Year"];
       d["Glob"] = +d["Glob"];
