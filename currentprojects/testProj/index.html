@@ -21,28 +21,25 @@ var n = 9, // number of layers
     k = 20; // number of bumps per layer
 */
 
-d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(d){
-    return {
-      "Year": +d["Year"],
-      "Glob": +d["Glob"],
-      "NHem": +d["NHem"],
-      "SHem": +d["SHem"],
-      "24N-90N": +d["24N-90N"],
-      "24S-24N": +d["24S-24N"],
-      "90S-24S": +d["90S-24S"],
-      "64N-90N": +d["64N-90N"],
-      "44N-64N": +d["44N-64N"],
-      "24N-44N": +d["24N-44N"],
-      "EQU-24N": +d["EQU-24N"],
-      "24S-EQU": +d["24S-EQU"],
-      "44S-24S": +d["44S-24S"],
-      "64S-44S": +d["64S-44S"],
-      "90S-64S": +d["90S-64S"]
-    };
-}, function(data) {
-
+d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
+    data.forEach(function(d) {
+      d["Year"] = +d["Year"];
+      d["Glob"] = +d["Glob"];
+      d["NHem"] = +d["NHem"];
+      d["SHem"] = +d["SHem"];
+      d["24N-90N"] = +d["24N-90N"];
+      d["24S-24N"] = +d["24S-24N"];
+      d["90S-24S"] = +d["90S-24S"];
+      d["64N-90N"] = +d["64N-90N"];
+      d["44N-64N"] = +d["44N-64N"];
+      d["24N-44N"] = +d["24N-44N"];
+      d["EQU-24N"] = +d["EQU-24N"];
+      d["24S-EQU"] = +d["24S-EQU"];
+      d["44S-24S"] = +d["44S-24S"];
+      d["64S-44S"] = +d["64S-44S"];
+      d["90S-64S"] = +d["90S-64S"];
+    });
   //check that dataset is good
-  console.log(data.length);
   console.log(data);
 
   /*
