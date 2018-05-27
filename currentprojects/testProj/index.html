@@ -21,7 +21,7 @@ var n = 9, // number of layers
     k = 20; // number of bumps per layer
 */
 
-/*
+
 d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
   console.log(data);
 });
@@ -44,29 +44,7 @@ d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
       d["64S-44S"] = +d["64S-44S"];
       d["90S-64S"] = +d["90S-64S"];
     });
-*/
 
-d3.csv("ExcelFormattedGISTEMPData2CSV.csv")
-  .row(function(d) {
-    return {
-      d["Year"] = +d["Year"];
-      d["Glob"] = +d["Glob"];
-      d["NHem"] = +d["NHem"];
-      d["SHem"] = +d["SHem"];
-      d["24N-90N"] = +d["24N-90N"];
-      d["24S-24N"] = +d["24S-24N"];
-      d["90S-24S"] = +d["90S-24S"];
-      d["64N-90N"] = +d["64N-90N"];
-      d["44N-64N"] = +d["44N-64N"];
-      d["24N-44N"] = +d["24N-44N"];
-      d["EQU-24N"] = +d["EQU-24N"];
-      d["24S-EQU"] = +d["24S-EQU"];
-      d["44S-24S"] = +d["44S-24S"];
-      d["64S-44S"] = +d["64S-44S"];
-      d["90S-64S"] = +d["90S-64S"];
-    };
-  })
-  .get(function(data) {
   //check that dataset is good
   console.log(data);
 
