@@ -27,11 +27,7 @@ d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
 });
 
 d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
-  for (var key in data) {
-    if (key.match(reg)) {
-      return key;
-    }
-  }
+  
   for (var key in data) {
   //data.forEach(function(d) {
       d["Year"] = +d["Year"];
