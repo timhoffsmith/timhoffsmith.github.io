@@ -27,8 +27,13 @@ d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
 });
 
 d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
-
-    data.forEach(function(d) {
+  for (var key in data) {
+    if (key.match(reg)) {
+      return key;
+    }
+  }
+  for (var key in data) {
+  //data.forEach(function(d) {
       d["Year"] = +d["Year"];
       d["Glob"] = +d["Glob"];
       d["NHem"] = +d["NHem"];
@@ -44,7 +49,8 @@ d3.csv("ExcelFormattedGISTEMPData2CSV.csv", function(data) {
       d["44S-24S"] = +d["44S-24S"];
       d["64S-44S"] = +d["64S-44S"];
       d["90S-64S"] = +d["90S-64S"];
-    });
+  //});
+  }
 
   //check that dataset is good
   console.log(data);
