@@ -9,20 +9,20 @@ body {
     	font-size: 1.2em;
 }
 
-img:after {
+img {
 	padding-right: 10px;
 	padding-left: 10px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+.mainphoto:after {
+	float: left;
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.mainphoto {
-	float: left;
-	overflow: auto;
-}
 
 .blurb {
 	padding-top: 20px;
