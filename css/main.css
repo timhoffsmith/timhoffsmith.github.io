@@ -10,12 +10,13 @@ body {
 }
 
 img {
-    float: right;
+    float: left;
 }
 
 .blurb {
 	padding-top: 20px;
 	padding-bottom: 40px;
+	padding-left: 10px;
 }
 
 .footer {
