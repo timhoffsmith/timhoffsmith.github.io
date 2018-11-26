@@ -9,6 +9,10 @@ body {
     	font-size: 1.2em;
 }
 
+img {
+    float: right;
+}
+
 .blurb {
 	padding-top: 20px;
 	padding-bottom: 40px;
