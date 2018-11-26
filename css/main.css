@@ -11,12 +11,15 @@ body {
 
 img {
     float: left;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .blurb {
 	padding-top: 20px;
 	padding-bottom: 40px;
 	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .footer {
