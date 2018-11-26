@@ -9,11 +9,14 @@ body {
     	font-size: 1.2em;
 }
 
-img {
+img:after {
 	padding-right: 10px;
 	padding-left: 10px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .mainphoto {
