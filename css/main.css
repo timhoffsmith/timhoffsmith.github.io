@@ -18,6 +18,7 @@ img {
 
 .mainphoto {
 	float: left;
+	overflow: auto;
 }
 
 .blurb {
