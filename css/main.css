@@ -16,11 +16,9 @@ img {
 	padding-bottom: 20px;
 }
 
-.mainphoto:after {
-	float: left;
-	content: "";
-	display: table;
-	clear: both;
+.mainphoto {
+	/*float: left;*/
+	display: inline-block
 }
 
 
