@@ -20,12 +20,17 @@ img {
 	float: left;
 }
 
-
 .blurb {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 10px;	
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .footer {
