@@ -25,21 +25,24 @@ img {
 }
 
 .twitterbird {
-	width: 65px;
+	display: block;
+	width: 35px;
 	height: 35px;
-	background-image: url("../Twitter_Logo_Black.png") no-repeat;
+	background: url("../twitter_sprite.png") bottom;
+	text-indent: -99999px;
 }
 .twitterbird a:hover {
-	background-image: url("../Twitter_Logo_Grey.png") no-repeat;
+	background-position: 0 0;
 }
 
 .linkedin {
-	width: 65px;
-	height: 35px;
-	background-image: url("../LinkedIn_Black.png") no-repeat;
+	width: 25px;
+	height: 25px;
+	background-image: url("../linkedin_sprite.png") bottom;
+	text-indent: -99999px;
 }
 .linkedin:hover {
-	background-image: url("../LinkedIn_Grey.png") no-repeat;
+	background-position: 0 0;
 }
 
 .blurb {
