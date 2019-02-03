@@ -25,7 +25,6 @@ img {
 }
 
 .twitterbird {
-	display: block;
 	width: 35px;
 	height: 35px;
 	background: url("../twitter_sprite.png") top no-repeat;
@@ -35,7 +34,6 @@ img {
 }
 
 .linkedin {
-	display: block;
 	width: 25px;
 	height: 25px;
 	background: url("../linkedin_sprite.png") top no-repeat;
