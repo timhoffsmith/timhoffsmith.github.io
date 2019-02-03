@@ -25,20 +25,20 @@ img {
 }
 
 .twitterbird {
-	width: 65;
-	height: 35;
+	width: 65px;
+	height: 35px;
 	background: url("../Twitter_Logo_Black.png") no-repeat;
 }
-.twitterbird:hover {
+.twitterbird a:hover {
 	background: url("../Twitter_Logo_Grey.png") no-repeat;
 }
 
-.linkedin {
-	width: 65;
-	height: 35;
+.linkedin a {
+	width: 65px;
+	height: 35px;
 	background: url("../LinkedIn_Black.png") no-repeat;
 }
-.linkedin:hover {
+.linkedin a:hover {
 	background: url("../LinkedIn_Grey.png") no-repeat;
 }
 
