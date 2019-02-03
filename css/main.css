@@ -1,5 +1,6 @@
-body { 
+body {
 	padding-top: 20px; padding-bottom: 40px; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; font-size: 16px;
+	background-color: #efefef;
 }
 
 .header {
@@ -26,7 +27,7 @@ img {
 	padding-top: 20px;
 	padding-bottom: 30px;
 	padding-left: 10px;
-	padding-right: 10px;	
+	padding-right: 10px;
 }
 
 .blurb:after {
