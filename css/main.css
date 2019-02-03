@@ -31,14 +31,14 @@ img {
 	background: url("../twitter_sprite.png") bottom;
 	text-indent: -99999px;
 }
-.twitterbird a:hover {
+.twitterbird:hover {
 	background-position: 0 0;
 }
 
 .linkedin {
 	width: 25px;
 	height: 25px;
-	background-image: url("../linkedin_sprite.png") bottom;
+	background: url("../linkedin_sprite.png") bottom;
 	text-indent: -99999px;
 }
 .linkedin:hover {
