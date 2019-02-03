@@ -13,6 +13,7 @@ body {
 img {
 	padding-right: 20px;
 	padding-left: 10px;
+	padding-bottom: 5px;
 	/*
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -23,24 +24,30 @@ img {
 	float: left;
 }
 
-.twitterbird {
-	width: 65;
-	height: 35;
-	display: block;
-	background:transparent url('Twitter_Logo_Black.png') center top no-repeat;
+a img.twitterbirdhover {
+	display: none;
 }
-.twitterbird:hover {
-	background-image: url('Twitter_Logo_Grey.png');
+a img.twitterbird {
+	display: inherit;
+}
+a:hover img.twitterbirdhover {
+	display: inherit;
+}
+a:hover img.twitterbird {
+	display: none;
 }
 
-.linkedin {
-	width: 65;
-	height: 35;
-	display: block;
-	background:transparent url('LinkedIn_Black.png') center top no-repeat;
+a img.linkedinhover {
+	display: none;
 }
-.linkedin:hover {
-	background-image: url('LinkedIn_Grey.png');
+a img.linkedin {
+	display: inherit;
+}
+a:hover img.linkedinhover {
+	display: inherit;
+}
+a:hover img.linkedin {
+	display: none;
 }
 
 .blurb {
