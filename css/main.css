@@ -24,30 +24,22 @@ img {
 	float: left;
 }
 
-a img.twitterbirdhover {
-	display: none;
+.twitterbird {
+	width: 65;
+	height: 35;
+	background: url("../Twitter_Logo_Black.png") no-repeat;
 }
-a img.twitterbird {
-	display: inherit;
-}
-a:hover img.twitterbirdhover {
-	display: inherit;
-}
-a:hover img.twitterbird {
-	display: none;
+.twitterbird:hover {
+	background: url("../Twitter_Logo_Grey.png") no-repeat;
 }
 
-a img.linkedinhover {
-	display: none;
+.linkedin {
+	width: 65;
+	height: 35;
+	background: url("../LinkedIn_Black.png") no-repeat;
 }
-a img.linkedin {
-	display: inherit;
-}
-a:hover img.linkedinhover {
-	display: inherit;
-}
-a:hover img.linkedin {
-	display: none;
+.linkedin:hover {
+	background: url("../LinkedIn_Grey.png") no-repeat;
 }
 
 .blurb {
