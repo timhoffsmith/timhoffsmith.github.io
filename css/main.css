@@ -26,6 +26,7 @@ img {
 .twitterbird {
 	width: 65;
 	height: 35;
+	display: block;
 	background:transparent url('Twitter_Logo_Black.png') center top no-repeat;
 }
 .twitterbird:hover {
@@ -35,6 +36,7 @@ img {
 .linkedin {
 	width: 65;
 	height: 35;
+	display: block;
 	background:transparent url('LinkedIn_Black.png') center top no-repeat;
 }
 .linkedin:hover {
