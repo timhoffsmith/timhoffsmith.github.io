@@ -23,6 +23,24 @@ img {
 	float: left;
 }
 
+.twitterbird {
+	width: 65;
+	height: 35;
+	background:transparent url('Twitter_Logo_Black.png') center top no-repeat;
+}
+.twitterbird:hover {
+	background-image: url('Twitter_Logo_Grey.png');
+}
+
+.linkedin {
+	width: 65;
+	height: 35;
+	background:transparent url('LinkedIn_Black.png') center top no-repeat;
+}
+.linkedin:hover {
+	background-image: url('LinkedIn_Grey.png');
+}
+
 .blurb {
 	padding-top: 20px;
 	padding-bottom: 30px;
