@@ -27,21 +27,21 @@ img {
 .twitterbird {
 	width: 35px;
 	height: 35px;
-	float: right;
-	background: url("../twitter_sprite.png") top no-repeat;
+	position: relative;
+	background: url("../twitter_sprite2.png") bottom no-repeat;
 }
 .twitterbird:hover {
-	background-position: bottom;
+	background-position: top;
 }
 
 .linkedin {
 	width: 25px;
 	height: 25px;
-	float: right;
-	background: url("../linkedin_sprite.png") top no-repeat;
+	position: relative;
+	background: url("../linkedin_sprite2.png") bottom no-repeat;
 }
 .linkedin:hover {
-	background-position: bottom;
+	background-position: top;
 }
 
 .blurb {
@@ -71,6 +71,7 @@ img {
 
 .footer li {
 	display: inline;
+	height: 50px;
 	margin-right: 20px;
 }
 
