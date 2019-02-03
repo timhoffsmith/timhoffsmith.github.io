@@ -25,7 +25,6 @@ img {
 }
 
 .twitterbird {
-	display: block;
 	width: 35px;
 	height: 35px;
 	background: url("../twitter_sprite.png") bottom;
