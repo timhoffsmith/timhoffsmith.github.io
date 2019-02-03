@@ -27,19 +27,19 @@ img {
 .twitterbird {
 	width: 65px;
 	height: 35px;
-	background: url("../Twitter_Logo_Black.png") no-repeat;
+	background-image: url("../Twitter_Logo_Black.png") no-repeat;
 }
 .twitterbird a:hover {
-	background: url("../Twitter_Logo_Grey.png") no-repeat;
+	background-image: url("../Twitter_Logo_Grey.png") no-repeat;
 }
 
-.linkedin a {
+.linkedin {
 	width: 65px;
 	height: 35px;
-	background: url("../LinkedIn_Black.png") no-repeat;
+	background-image: url("../LinkedIn_Black.png") no-repeat;
 }
-.linkedin a:hover {
-	background: url("../LinkedIn_Grey.png") no-repeat;
+.linkedin:hover {
+	background-image: url("../LinkedIn_Grey.png") no-repeat;
 }
 
 .blurb {
