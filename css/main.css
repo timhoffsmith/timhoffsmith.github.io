@@ -27,21 +27,19 @@ img {
 .twitterbird {
 	width: 35px;
 	height: 35px;
-	background: url("../twitter_sprite.png") bottom;
-	text-indent: -99999px;
+	background: url("../twitter_sprite.png") top no-repeat;
 }
 .twitterbird:hover {
-	background-position: 0 0;
+	background-position: bottom;
 }
 
 .linkedin {
 	width: 25px;
 	height: 25px;
-	background: url("../linkedin_sprite.png") bottom;
-	text-indent: -99999px;
+	background: url("../linkedin_sprite.png") top no-repeat;
 }
 .linkedin:hover {
-	background-position: 0 0;
+	background-position: bottom;
 }
 
 .blurb {
