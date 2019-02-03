@@ -29,7 +29,7 @@ img {
 	height: 35px;
 	position: absolute;
 	left: 375px;
-	bottom: 6px;
+	bottom: 3px;
 	background: url("../twitter_sprite2.png") bottom no-repeat;
 }
 .twitterbird:hover {
