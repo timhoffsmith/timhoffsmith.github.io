@@ -27,7 +27,8 @@ img {
 .twitterbird {
 	width: 35px;
 	height: 35px;
-	position: relative;
+	position: absolute;
+	left: 0px;
 	background: url("../twitter_sprite2.png") bottom no-repeat;
 }
 .twitterbird:hover {
@@ -37,7 +38,8 @@ img {
 .linkedin {
 	width: 25px;
 	height: 25px;
-	position: relative;
+	position: absolute;
+	left: 0px;
 	background: url("../linkedin_sprite2.png") bottom no-repeat;
 }
 .linkedin:hover {
@@ -70,8 +72,8 @@ img {
 }
 
 .footer li {
-	display: block;
-	height: 40px;
+	display: inline;
+	height: 50px;
 	margin-right: 20px;
 }
 
