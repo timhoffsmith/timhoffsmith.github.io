@@ -27,6 +27,7 @@ img {
 .twitterbird {
 	width: 35px;
 	height: 35px;
+	float: right;
 	background: url("../twitter_sprite.png") top no-repeat;
 }
 .twitterbird:hover {
@@ -36,6 +37,7 @@ img {
 .linkedin {
 	width: 25px;
 	height: 25px;
+	float: right;
 	background: url("../linkedin_sprite.png") top no-repeat;
 }
 .linkedin:hover {
@@ -59,12 +61,12 @@ img {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
 	padding-top: 20px;
 	border-top: 1px solid #d5d5d5;
-    	font-size: .8em;
+  font-size: .8em;
 }
 
 .footer ul {
 	padding: 0px;
-    	list-style-type: none;
+  list-style-type: none;
 }
 
 .footer li {
