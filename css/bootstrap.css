@@ -5743,7 +5743,7 @@ body.modal-open,
   }
 }
 
-.tooltip {
+/* .tooltip {
   position: absolute;
   z-index: 1030;
   display: block;
@@ -5855,7 +5855,7 @@ body.modal-open,
   right: 5px;
   border-bottom-color: #000000;
   border-width: 0 5px 5px;
-}
+} */
 
 .popover {
   position: absolute;
