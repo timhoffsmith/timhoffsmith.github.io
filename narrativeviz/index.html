@@ -496,10 +496,10 @@ narrativeviz: active
           " of universities? Well, without directly studying those relationships, we can't" +
           " really say that one is causing the other. However, below we can see whether the" +
           " difference in repayment rates between students from higher income and lower" +
-          " income families is correlated with tuition costs and state funding.<br />" +
+          " income families is correlated with tuition costs and state funding. " +
           "Sure enough, in these plots we see that the difference in repayment rates in each state" +
           " appears to be associated with higher tuition costs and less state funding." +
-          " By hovering the mouse over each state, we can identify several states that support this trend.<br />" +
+          " By hovering the mouse over each state, we can identify several states that support this trend." +
           " This preliminary visual analysis suggests that increased tuition costs and reductions" +
           " in state funding disproportionately harm students from families with less discretionary income.";
 
@@ -551,7 +551,8 @@ narrativeviz: active
       var filtered = summary_data.filter(function(d) { 
             return (d.repay_rate_category == 'repay_rate_hilodiff' && +d.year == 2014);
             });
-
+      
+      // Create data points
       update = d3.selectAll("svg").append("g")
           .attr("transform","translate("+margin+","+margin+")")
           .selectAll("circle").data(filtered).enter().append("circle")
@@ -570,8 +571,8 @@ narrativeviz: active
                 .attr("r", 7)
                 .attr("fill", "orange");
               tooltip.style("opacity", .9)
-			  	.style("left", (d3.event.pageX+45) + "px")
-			  	.style("top", (d3.event.pageY-105) + "px")
+      			  	.style("left", (d3.event.pageX+45) + "px")
+			  	      .style("top", (d3.event.pageY-105) + "px")
                 .html("<b>" + d.state_abbr + "</b></br>"
                     + y_ax + ": " + Math.round(d[y_data])
                     + "</br>Repay Rate Diff: "
@@ -585,6 +586,11 @@ narrativeviz: active
                 .attr("fill", "steelblue");
               tooltip.style("opacity", 0)
               });
+      
+      pulse = d3.selectAll("svg").selectAll("g").selectAll("circle").filter(function(d, i) { return d.state_abbr == "WY";})
+      console.log(pulse)
+      pulse
+              .attr("fill", "orange");
 
       // Create axes
       d3.selectAll("svg").append("g")
