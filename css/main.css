@@ -37,10 +37,10 @@ img {
 }
 
 .linkedin {
-	width: 20px;
+	width: 30px;
 	height: 20px;
 	position: absolute;
-	left: 55px;
+	left: 45px;
 	background: url("../linkedin_sprite2.png") bottom no-repeat;
 }
 .linkedin:hover {
