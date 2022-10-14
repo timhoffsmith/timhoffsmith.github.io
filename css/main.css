@@ -28,7 +28,7 @@ img {
 	width: 35px;
 	height: 35px;
 	position: absolute;
-	/*left: 75px;*/
+	left: 20px;
 	bottom: 0px;
 	background: url("../twitter_sprite2.png") bottom no-repeat;
 }
@@ -40,7 +40,7 @@ img {
 	width: 20px;
 	height: 20px;
 	position: absolute;
-	left: 45px;
+	left: 55px;
 	background: url("../linkedin_sprite2.png") bottom no-repeat;
 }
 .linkedin:hover {
